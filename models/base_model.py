@@ -8,13 +8,12 @@ from datetime import datetime
 
 class BaseModel():
     """
-        A Class that Represent a BaseModel
+        Defines all common attributes/method of the class
     """
 
     def __init__(self):
         """
-            args:
-                Initializes the attributes of the class
+            Initializes the attributes of the class
         """
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
@@ -22,8 +21,7 @@ class BaseModel():
 
     def __str__(self):
         """
-            A module in BaseModel that enables printing \
-            of instances of the class
+            Defines a string representation of the instance
         """
 
         return f"[{__class__.__name__}] ({self.id}) {self.__dict__}"

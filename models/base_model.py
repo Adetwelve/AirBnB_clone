@@ -6,10 +6,11 @@ import models
 
 
 class BaseModel():
-    """ Defines all common attributes/method of the class """
+    """ Defines all common attributes/method of the BaseModel """
 
     def __init__(self, *args, **kwargs):
         """ Initializes the attributes of the class
+            Kwargs: returns a key and value
         """
 
         if len(kwargs) != 0:

@@ -10,7 +10,8 @@ class BaseModel():
 
     def __init__(self, *args, **kwargs):
         """ Initializes the attributes of the class
-            Kwargs: returns a key and value
+            Kwargs:
+                returns a dictionary rep of key and value
         """
 
         if len(kwargs) != 0:
@@ -23,7 +24,6 @@ class BaseModel():
                 else:
                     self.__dict__[key] = value
         else:
-
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
@@ -35,7 +35,7 @@ class BaseModel():
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
-        """ updates the public instance attribute `updated_at` \
+        """ updates the public instance attribute `updated_at`
             with the current datetime
         """
 
@@ -43,7 +43,7 @@ class BaseModel():
         models.storage.save()
 
     def to_dict(self):
-        """ returns a dictionary containing all keys/value \
+        """ returns a dictionary containing all keys/value
             of `__dict__` of the instance
         """
 

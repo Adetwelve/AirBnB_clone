@@ -184,7 +184,6 @@ class HBNBCommand(cmd.Cmd):
                 self.do_destroy(f"{args[0]} {id_}")
             elif args[1].startswith("update"):
                 split_ = re.split('"update"|", "|\"', args[1])
-                print(split_)
                 id_ = split_[1]
                 attr_name = split_[2]
                 attr_value = split_[3]

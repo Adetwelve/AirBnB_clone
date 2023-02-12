@@ -2,16 +2,18 @@
 import uuid
 from datetime import datetime
 import models
-""" Representation of class `BaseModel` """
+""" This module defines a class `BaseModel` """
 
 
 class BaseModel():
     """ Defines all common attributes/method of the BaseModel """
 
     def __init__(self, *args, **kwargs):
-        """ Initializes the attributes of the class
-            Kwargs:
-                returns a dictionary rep of key and value
+        """ Initializes a new instance of BaseModel
+
+        Args:
+            *args (any): unused
+            **kwargs (dict): key & value pair of attributes
         """
 
         if len(kwargs) != 0:
@@ -29,7 +31,7 @@ class BaseModel():
     def __str__(self):
         """ Defines a string representation of the instance """
 
-        return f"[{__class__.__name__}] ({self.id}) {self.__dict__}"
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """ updates the public instance attribute `updated_at`

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This module creates a class `FileStorage` """
 import json
 from models.base_model import BaseModel
 """ 

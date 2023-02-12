@@ -157,6 +157,7 @@ class TestBaseModel(unittest.TestCase):
              "float": 3.14}
         o = BaseModel(**d)
         self.assertEqual(o.to_dict(), d)
+
     def test_5_save(self):
         """Tests that storage.save() is called from save()."""
         self.resetStorage()

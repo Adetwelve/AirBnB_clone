@@ -2,7 +2,13 @@
 """ This module creates a class `FileStorage` """
 import json
 from models.base_model import BaseModel
-""" 
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
+"""
     Write a class FileStorage that serializes instances \
     to a JSON file and deserializes JSON file to instances:
 """
@@ -30,7 +36,7 @@ class FileStorage():
         """ serializes `__objects` to the JSON file """
 
         with open(self.__file_path, "w", encoding="utf-8") as f:
-            j_file = {k : v.to_dict() for k, v in self.__objects.items()}
+            j_file = {k: v.to_dict() for k, v in self.__objects.items()}
             json.dump(j_file, f)
 
     def reload(self):

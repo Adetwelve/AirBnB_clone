@@ -1,0 +1,118 @@
+.type-house { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.places h1 {
+    padding-left: 15px;
+    font-size: 30px
+}
+
+article  {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid  #FF5A5F;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type-house h2 {
+    font-size: 30px;
+    /* text-align: center; */
+    margin: 0;
+    margin-right: auto;
+    margin-left: 28%;
+}
+
+.price_by_night {
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.price_by_night h3 
+{
+    margin: 0;
+    padding-top: 10px;
+}
+
+.information {
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex; 
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.max_guest, .number_rooms, .number_bathrooms {
+    width: 100px;
+    text-align: center;
+}
+
+.user {
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.user p {
+    margin-bottom: 0%;
+}
+
+.type-house div.amenities, .type-house div.reviews {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.type-house div.amenities h2, .reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-left: 0%;
+    padding-bottom: 10px;
+}
+
+.type-house ul {
+    width: 100%;
+    list-style: none;
+    padding-inline-start: 0%;
+}
+
+ div.tv_icon, div.wifi_icon, div.pet_icon {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+}
+
+div.tv_icon {
+    background-image: url('../images/icon_tv.png')
+}
+
+div.wifi_icon {
+    background-image: url('../images/icon_wifi.png');
+}
+
+div.pet_icon {
+    background-image: url('../images/icon_pets.png');
+}
+
+.type-house ul li {
+    display: flex;
+    align-items: center;
+}
+
+.reviews h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}

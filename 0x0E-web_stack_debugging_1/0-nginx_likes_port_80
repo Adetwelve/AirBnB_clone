@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A bash scrip running, and listening on port 80
+sudo cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart

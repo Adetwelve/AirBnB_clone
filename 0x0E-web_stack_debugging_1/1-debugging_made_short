@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A bash scrip running on port 80 and killed 
+sudo cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+pkill -o nginx

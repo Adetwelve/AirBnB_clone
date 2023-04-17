@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#install ufw firewall and setup a few rules on web-01
+
+sudo apt update
+sudo apt install ufw
+sudo ufw enable
+sudo ufw allow 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+sudo ufw default deny incoming

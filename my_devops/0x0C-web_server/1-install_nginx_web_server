@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# install nginx on a web server and listen on port 80
+# return a page containing "Hello World" when quried
+
+# Install nginx
+sudo apt-get update -y
+sudo apt-get install nginx -y
+
+# configuration
+sudo ufw allow 'Nginx HTTP'
+
+# creating a sample page
+echo "Hello World" > /var/www/html/index.html
+
+# start nginx
+service nginx start
